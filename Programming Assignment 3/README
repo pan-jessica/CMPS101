@@ -1,0 +1,40 @@
+/*
+ * Created by Jessica Pan on 10/28/2018
+ * CruzID: jeypan 
+ * PA3
+ * CMPS101
+ *
+ */
+ 
+Sparse.java
+	Sparse.java represents the top level client of Matrix, which itself is the client of List.
+	It isn't itself a direct client of List, since it doesn't need to call any List operations.
+	Sparse reads in an input file with information	about 2 matrices and manipulate the data,
+	and write it back into an output file. This file was implemented by me.
+
+Matrix.java
+	Matrix.java is an implementation of Matrix ADT that's written by me. It creates a matrix by creating an 
+	array of Lists of Empty Objects and these Lists are maintained in column sorted order. It contains 
+	operations that allow for us to manipulate matrices by addition, subtraction, multiplication, scalar 
+	multiplication,	transpose, copy, equals changeEntry and toString. It also includes a helper private 
+	funtion for assisting the operations implemented.
+	
+List.java
+	List is an ADT, written by me, that contains a doubly linked List of objects. List is modified from pa1 
+	and the objects referred to by these List elements will be defined in the Matrix ADT.
+
+MatrixTest.java
+	MatrixTest is a test client for Matrix ADT to test the edge cases of Matrix for any bugs. It also calls
+	all the methods in Matrix to test if they work properly too.
+
+ListTest.java
+	ListTest is a test client for List ADT to test for the edge cases in List for any bugs. It also calls all
+	the methods of List to test for any errors.
+
+Makefile
+	Makefile compiles the files of this assignment, cleans certain files in the directory and submits them as well. This file makes sure 
+	that your code in your files function properly. This was file was provided by our professor and we were allowed to alter it.
+
+README
+	README provides a description of each the different files used in this assignment (it's also the file that you're currently reading right now).
+	It also provides any commands that are used to run certain files in this assignment.
