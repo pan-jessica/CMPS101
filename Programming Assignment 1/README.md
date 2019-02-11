@@ -1,5 +1,4 @@
 Jessica Pan
-Cruz ID: jeypan
 PA1
 CMPS101
 October 8, 2018
